@@ -35,12 +35,7 @@ The codebase is organized into the following key components:
 * **`Zfish-Nc-cluster-all`**
     * **Clustering & Analysis:** A comprehensive analysis package for the final reconstruction results. It includes tools for feature extraction, neuronal clustering, and statistical evaluation of the connectome data.
 
-## Usage
-* [Add instructions on how to run the code here]
-
 ## Citation
 If you use this code or models in your research, please cite:
-* [Your Name/Paper Title Here]
+* F.-N. Li, J.-Z. Liu, C. Shi, J.-B. Yuan, Y.-N. Lv, J. Liu, L.-N. Zhang, L.-L. Li, L.J. Shen, X. Chen et al., Multiplexed neuromodulatory-type-annotated whole-brain em-reconstruction of larval zebrafish, bioRxiv (2025).
 
-## License
-[Your License Name, e.g., MIT License]
