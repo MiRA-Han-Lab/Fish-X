@@ -10,10 +10,10 @@ The toolkit covers the entire pipeline from raw image quality assessment and den
 The codebase is organized into the following key components:
 
 ### 1. Image Enhancement & Denoising
-* **`Blind2Sound` (EM Denoising v2.0)**
-    * Our advanced, self-supervised denoising algorithm designed specifically for electron microscopy images. This version improves upon previous iterations by effectively suppressing noise without introducing residual artifacts, preserving high-frequency structural details.
 * **`Blind2Unblind` (EM Denoising v1.0)**
     * The baseline version of our EM image denoising framework. It provides the foundational algorithms for unsupervised noise removal in high-resolution EM datasets.
+* **`Blind2Sound` (EM Denoising v2.0)**
+    * Our advanced, self-supervised denoising algorithm designed specifically for electron microscopy images. This version improves upon previous iterations by effectively suppressing noise without introducing residual artifacts, preserving high-frequency structural details.
 
 ### 2. Neuron Reconstruction Pipeline
 * **`Segmentation`**
