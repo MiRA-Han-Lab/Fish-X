@@ -37,5 +37,5 @@ The codebase is organized into the following key components:
 
 ## Citation
 If you use this code or models in your research, please cite:
-* F.-N. Li, J.-Z. Liu, C. Shi, J.-B. Yuan, Y.-N. Lv, J. Liu, L.-N. Zhang, L.-L. Li, L.J. Shen, X. Chen et al., Multiplexed neuromodulatory-type-annotated whole-brain em-reconstruction of larval zebrafish, bioRxiv (2025).
+* F.-N. Li, J.-Z. Liu, C. Shi, J.-B. Yuan, Y.-N. Lv, J. Liu, L.-N. Zhang, L.-L. Li, L.J. Shen, X. Chen et al., Multi-level broad-yet-sparse input organization of LC-NE neurons revealed by multiplexed whole-brain EM reconstruction, bioRxiv (2026).
 
