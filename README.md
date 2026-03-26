@@ -28,6 +28,8 @@ The codebase is organized into the following key components:
     * **Ultrastructure Recognition:** A specialized detection suite for identifying and segmenting intracellular organelles, specifically mitochondria and synapses, within the zebrafish EM volume.
 * **`Correlative Light and Electron Microscopy` (CLEM)**
     * **Registration Framework:** Robust algorithms for the cross-modal alignment of Light Microscopy (LM) and Electron Microscopy (EM) datasets, enabling precise overlay of functional signals onto structural data.
+* **`Micro-mesoscopic Morphology Comparison` (MMC)**
+    * **LM and EM morphological comparision:** This module facilitates cross-modal morphological comparisons between Light Microscopy (LM) and Electron Microscopy (EM) neuron reconstructions.
 
 ### 4. Analysis & Quality Control
 * **`Quality Assessment`**
