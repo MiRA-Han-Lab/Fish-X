@@ -37,7 +37,7 @@ def calculate_sd(true_positions, guang):
 #read EM csv file
 csv_reader1 = csv.reader(open("EM495_proofed2_r1.csv")) #change to totalEM csv name
 
-# 读取目标SWC文件
+# Read the target SWC file
 LM_folder_path='/home/testuser1/User_folder/ZJL/SyN_swc_total/'
 EM_folder_path='/home/testuser1/User_folder/ZJL/dictionary/EM_FM/zfishall_bind_neuron_proof_2_swc_result1/'
 
@@ -47,10 +47,10 @@ for row in csv_reader1:
   EM_path=os.path.join(EM_folder_path,EM_swc_name)
   EM = read_swc(EM_path)
 
-  #胞体位置获取
+  #Acquisition of soma position
   Em_soma=EM[0]
 
-  matches = [] # 初始化一个列表来存储匹配结果
+  matches = [] # Initialize a list to store the matching results
   
   LM_path='/home/testuser2/User_folder/ZJL/EM_LM/LMneighbors_list/'+str(EM_swc_name)+'_LM_neighbours.csv' #read LM_neighber csv file
   csv_reader2 = csv.reader(open(LM_path)) 
@@ -66,9 +66,9 @@ for row in csv_reader1:
         LM_offset=LM+delta
 
         LM_type = 'E'
-        # 计算与目标SWC文件的相似度
+        # Calculate the similarity with the target SWC file
         distance = calculate_sd(EM, LM_offset)
-        # 将结果添加到匹配列表中
+        # Add the result to the matching list
         matches.append((swc_file, distance, LM_type))
      if 'glyt2' in swc_file or 'gad1b' in swc_file:
         swc_path = os.path.join(LM_folder_path, swc_file)
@@ -77,12 +77,12 @@ for row in csv_reader1:
         delta = Em_soma - LM_soma
         LM_offset = LM + delta
         LM_type = 'I'
-        # 计算与目标SWC文件的相似度
+        # Calculate the similarity with the target SWC file
         distance = calculate_sd(EM, LM_offset)
-        # 将结果添加到匹配列表中
+        # Add the result to the matching list
         matches.append((swc_file, distance, LM_type))
   
-  # 根据相似度对匹配结果进行排序
+  # Sort the matching results based on similarity
   matches.sort(key=lambda x: x[1])
  
   # output top10 neighbour LM swc and write into csv
@@ -96,4 +96,6 @@ for row in csv_reader1:
   	for match in matches[:t]:
   		writer.writerow([match[0],match[1],match[2]])
   index +=1
+
+
 
